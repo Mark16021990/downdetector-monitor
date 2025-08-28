@@ -1,6 +1,9 @@
 import requests
 import json
 from urllib.parse import quote
+import logging
+
+logger = logging.getLogger(__name__)
 
 class DowndetectorAPI:
     def __init__(self, token, base_url="https://downdetector.info/api/v1"):
